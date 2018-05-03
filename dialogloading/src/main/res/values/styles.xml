@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--  LoadingDialog样式  -->
+    <style name="loadingDiaLogStyle" parent="android:style/Theme.Dialog">
+        <!--<item name="android:background">@android:color/transparent</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--<item name="android:windowIsTranslucent">true</item>&lt;!&ndash;  半透明  &ndash;&gt;-->
+        <item name="android:backgroundDimEnabled">false</item> <!--  模糊  -->
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+    <!-- Dialog的样式 -->
+    <style name="dialogStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/enter_dialog</item>
+        <item name="android:windowExitAnimation">@anim/exit_dialog</item>
+    </style>
+
+    <style name="dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowFrame">@null</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="android:windowAnimationStyle">@style/dialogStyle</item>
+    </style>
+</resources>
