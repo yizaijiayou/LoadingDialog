@@ -10,7 +10,7 @@
         android:background="@drawable/shape_loadingdialog"
         android:gravity="center">
 
-        <com.example.myutils.utils.loadingDialog.LoadingView
+        <com.scy.dialogloading.LoadingView
             android:layout_width="50dp"
             android:layout_height="50dp" />
     </LinearLayout>

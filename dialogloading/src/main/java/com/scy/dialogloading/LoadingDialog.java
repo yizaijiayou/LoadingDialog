@@ -1,4 +1,4 @@
-package com.example.myutils.utils.loadingDialog;
+package com.scy.dialogloading;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -6,8 +6,6 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
-
-import com.example.myutils.R;
 
 
 /**

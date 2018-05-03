@@ -1,15 +1,14 @@
-package com.example.myutils.utils.loadingDialog;
+package com.scy.dialogloading;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
-
-import com.example.myutils.R;
 
 
 /**
@@ -37,7 +36,7 @@ public class LoadingView extends View {
 
     private void init() {
         paint = new Paint();
-        paint.setColor(ContextCompat.getColor(getContext(), R.color.colorAccent));
+        paint.setColor(Color.BLUE);
     }
 
     private int width;
