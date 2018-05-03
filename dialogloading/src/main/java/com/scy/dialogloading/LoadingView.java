@@ -106,4 +106,7 @@ public class LoadingView extends View {
         }
     }
 
+    public void setPaintColor(int color){
+        paint.setColor(color);
+    }
 }

@@ -16,14 +16,17 @@ import android.view.WindowManager;
  */
 public class LoadingDialog extends Dialog {
 
-    public LoadingDialog(Context context) {
+    public LoadingDialog(Context context,int color) {
         super(context, R.style.loadingDiaLogStyle);
         View view = LayoutInflater.from(context).inflate(R.layout.loading_dialog, null);
+
+        LoadingView loadingView = view.findViewById(R.id.loadingView);
+        loadingView.setPaintColor(color);
+
         //设置半透明
         WindowManager.LayoutParams lp = getWindow().getAttributes();
         lp.alpha = 0.6f;
         getWindow().setAttributes(lp);
-
 
         setCancelable(false);
         setContentView(view);
@@ -31,8 +34,8 @@ public class LoadingDialog extends Dialog {
 
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
-        switch (keyCode){
-            case  KeyEvent.KEYCODE_BACK:
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_BACK:
                 dismiss();
                 break;
         }
