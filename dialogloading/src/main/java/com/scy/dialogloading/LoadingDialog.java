@@ -16,6 +16,10 @@ import android.view.WindowManager;
  */
 public class LoadingDialog extends Dialog {
 
+    /**
+     * @param context
+     * @param color  ContextCompat.getColor(this,R.color.colorAccent)
+     */
     public LoadingDialog(Context context,int color) {
         super(context, R.style.loadingDiaLogStyle);
         View view = LayoutInflater.from(context).inflate(R.layout.loading_dialog, null);
